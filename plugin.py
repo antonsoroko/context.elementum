@@ -141,7 +141,7 @@ def doDownload():
 
 
 def doLibraryAction(action):
-    dbid = getDbId()
+    dbid = xbmc.getInfoLabel('ListItem.DBID')
     mediatype = getMediaType()
 
     heading = ADDON.getLocalizedString(32017) if action == "add" else "Unsupported action"
@@ -155,7 +155,7 @@ def doLibraryAction(action):
 
 
 def doTraktAction(action):
-    dbid = getDbId()
+    dbid = xbmc.getInfoLabel('ListItem.DBID')
     mediatype = getMediaType()
 
     if action == "watched":
