@@ -16,4 +16,4 @@ if __name__ == '__main__':
     mediatype = xbmc.getInfoLabel('ListItem.DBTYPE')
 
     log.info("truelabel: %s; infolabel: %s; dbid: %s; path: %s;" % (truelabel, infolabel, dbid, path))
-    xbmcgui.Dialog().notification("truelabel: %s" % truelabel, "infolabel: %s; dbid: %s; mediatype: %s path: %s;" % (infolabel, dbid, mediatype, path))
+    xbmcgui.Dialog().notification("truelabel: %s" % truelabel, "infolabel: %s; dbid: %s; mediatype: %s; path: %s;" % (infolabel, dbid, mediatype, path))
